@@ -7,7 +7,7 @@ from discord.utils import get
 
 
 client = discord.Client()
-client = commands.Bot(command_prefix=".")
+client = commands.Bot(command_prefix="!!")
 
 
 @client.command()
