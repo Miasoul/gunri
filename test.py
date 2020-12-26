@@ -19,3 +19,6 @@ async def ban(ctx, member : discord.Member, *, reason):
     embed.add_field(name="처벌",value="밴")
     await member.ban(reason = reason)
     await client.get_channel(int(channel)).send(embed=embed)
+
+acces_token = os.environ["BOT_TOKEN"]    
+client.run(acces_token)    
