@@ -12,13 +12,14 @@ client = commands.Bot(command_prefix="!!")
 
 @client.command()
 async def ban(ctx, member : discord.Member, *, reason):
-    channel = '792386614164455433'
+    channel = '792546709057961994'
     embed = discord.Embed(title="처리결과", description="", color=0x62c1cc)
     embed.add_field(name="이름",value=member.name)
     embed.add_field(name="사유",value=reason)
     embed.add_field(name="처벌",value="밴")
     await member.ban(reason = reason)
     await client.get_channel(int(channel)).send(embed=embed)
+    await ctx.message.delete()
 
 acces_token = os.environ["BOT_TOKEN"]    
 client.run(acces_token)    
