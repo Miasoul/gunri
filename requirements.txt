@@ -1,3 +1,2 @@
 discord.py
-get==1.0.0
-commands==1.0.0
+
