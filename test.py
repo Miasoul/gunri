@@ -12,7 +12,7 @@ client = commands.Bot(command_prefix="~")
 
 @client.command()
 async def ban(ctx, member : discord.Member, reason):
-    channel = '792546709057961994'
+    channel = '792606160419029022'
     embed = discord.Embed(title="처리결과", description="", color=0x62c1cc)
     embed.add_field(name="이름",value=member.name)
     embed.add_field(name="사유",value=reason)
