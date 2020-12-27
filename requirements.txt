@@ -1,1 +1,9 @@
 discord.py
+websockets==6.0
+gtts
+PyGithub
+pyssml
+gspread
+oauth2client
+PyOpenSSL
+boto3
